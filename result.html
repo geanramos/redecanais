@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando...</title>
+</head>
+<body>
+    <h1>Redirecionando...</h1>
+
+    <script>
+        // Função para obter parâmetros da URL por nome
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Obtém o valor do parâmetro "q" da URL
+        var q = getParameterByName('q');
+
+        // Se "q" estiver definido, realiza o redirecionamento
+        if (q !== null && q !== '') {
+            q = encodeURIComponent(q); // Escapar caracteres especiais
+            window.location.href = "https://www.google.com.br/search?q=" + q + "+site%3Aredecanais.dev";
+        } else {
+            // Se "q" não estiver definido, exibe uma mensagem de erro ou faz outro tratamento
+            alert('Parâmetro "q" não encontrado na URL.');
+        }
+    </script>
+</body>
+</html>
