@@ -32,35 +32,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
   <link rel="preload" as="style" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXh"><link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXhj" type="text/css">
-  <style>
-  
-  .btn-secondary,
-.btn-secondary:active {
-  background-color: #0000ff !important;
-  border-color: #3F51B5 !important;
-  color: #ffffff !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary.focus,
-.btn-secondary.active {
-  color: #ffffff !important;
-  background-color: #000000 !important;
-  border-color: #999999 !important;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-img, iframe {
-    display: block;
-    width: 100%;
-    border-radius: 8px;
-}
-  </style>
-
-  
-  
-  
+  <style> .btn-secondary, .btn-secondary:active { background-color: #0000ff !important; border-color: #3F51B5 !important; color: #ffffff !important; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary.active { color: #ffffff !important; background-color: #000000 !important; border-color: #999999 !important; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); } img, iframe { border-radius: 8px; } </style>  
 </head>
 <body>
   
