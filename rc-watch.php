@@ -42,7 +42,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="index.html">
+                    <a href="https://redecanais.u1m.com.br/">
                         <img src="https://redecanais.u1m.com.br/assets/images/logo.png" alt="rede canais" style="height: 3rem;">
                     </a>
                 </span>
@@ -57,9 +57,9 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="browse-filmes-videos-1-date.html">Filmes</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="browse-series-videos.html">Series</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="browse-animes-videos-1-date.html">Animes</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="topvideos.html">Top 10</a>
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://redecanais.u1m.com.br/browse-filmes-videos-1-date.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://redecanais.u1m.com.br/browse-series-videos.html">Series</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://redecanais.u1m.com.br/browse-animes-videos-1-date.html">Animes</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://redecanais.u1m.com.br/topvideos.html">Top 10</a>
                     </li></ul>
                 <div class="icons-menu">
                     <a class="iconfont-wrapper" href="https://www.facebook.com/hashtag/redecanais" target="_blank">
@@ -73,7 +73,7 @@
                     </a>
                     
                 </div>
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary display-4" href="android/" target="_blank"><span class="mobi-mbri mobi-mbri-android mbr-iconfont mbr-iconfont-btn"></span>Download</a></div>
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary display-4" href="https://redecanais.u1m.com.br/android/" target="_blank"><span class="mobi-mbri mobi-mbri-android mbr-iconfont mbr-iconfont-btn"></span>Download</a></div>
             </div>
         </div>
     </nav>
@@ -90,7 +90,7 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-12 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" name=Player "" src="https://redecanais.dev/embed.php?vid=ab2e9d291" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" name=Player "" src="https://www.youtube.com/embed/uUQvoNM-Heo?autoplay=1" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
 				
 				</div>
 				
@@ -268,24 +268,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__comments" id="facebook-comments-block-5" data-rv-view="8" style="background-color: rgb(255, 255, 255); padding-top: 4rem; padding-bottom: 4rem;">
-         
-
-    <div class="mbr-section__container mbr-section__container--isolated addons-container">
-        <div class="addons-row">
-            
-            <div id="disqus_thread"></div>
-<!-- codigo do comentario-->
-<noscript>
-    Please enable JavaScript to view the 
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-        comments powered by Disqus.
-    </a>
-</noscript>
         </div>
     </div>
 </section>
