@@ -1,27 +1,37 @@
+    <?php
+    // Verifica se os parâmetros 'v' (código do vídeo) e 't' (título do vídeo) foram passados via GET
+    if (isset($_GET['v']) && isset($_GET['t'])) {
+        $videoId = $_GET['v'];
+        $title = $_GET['t'];
+    } else {
+        // Valores padrão caso os parâmetros não sejam fornecidos (substitua por valores padrão ou manipule conforme necessário)
+        $videoId = 'DVRTDMNT';
+        $title = 'RedeCanais';
+    }
+    ?>
 <!DOCTYPE html>
 <html  >
 <head>
   
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.18, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://redecanais.u1m.com.br/favicon.png" type="image/x-icon">
   <meta name="description" content="">
   
   
-  <title>Rede Canais - Assista</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/facebook-plugin/style.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <title>Rede Canais - Assista <?php echo $title; ?> Online</title>
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/facebook-plugin/style.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=IUdKXh"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=IUdKXh" type="text/css">
+  <link rel="preload" as="style" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXh"><link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXhj" type="text/css">
   <style>
   
   .btn-secondary,
@@ -61,7 +71,7 @@ img, iframe {
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.png" alt="rede canais" style="height: 3rem;">
+                        <img src="https://redecanais.u1m.com.br/assets/images/logo.png" alt="rede canais" style="height: 3rem;">
                     </a>
                 </span>
                 
@@ -103,12 +113,14 @@ img, iframe {
     
     <div class="container">
         <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong>Star Trek: Discovery</strong></h4>
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong><?php echo $title; ?></strong></h4>
             <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-7">Temporada: 05 | Ep: 01 - Diretriz Vermelha</h5>
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-12 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbew2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/server23hlb.php?vid=STRTRKT05EP04" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe></div>
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" name=Player "" src="https://redecanais.dev/embed.php?vid=ab2e9d291" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
+				
+				</div>
 				
             </div>
         </div>
@@ -295,35 +307,7 @@ img, iframe {
         <div class="addons-row">
             
             <div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-     *  PLATFORM OR CMS.
-     *  
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-     *  https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        // Replace PAGE_URL with your page's canonical URL variable
-        this.page.url = PAGE_URL;  
-        
-        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        this.page.identifier = PAGE_IDENTIFIER; 
-    };
-    */
-    
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-        
-        // IMPORTANT: Replace EXAMPLE with your forum shortname!
-        s.src = 'https://redecanais.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+<!-- codigo do comentario-->
 <noscript>
     Please enable JavaScript to view the 
     <a href="https://disqus.com/?ref_noscript" rel="nofollow">
@@ -409,7 +393,7 @@ img, iframe {
         </div>
     </div>
 	
-</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>  <script src="assets/facebook-plugin/facebook-script.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><script src="https://redecanais.u1m.com.br/assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>  <script src="https://redecanais.u1m.com.br/assets/facebook-plugin/facebook-script.js"></script>  <script src="https://redecanais.u1m.com.br/assets/smoothscroll/smooth-scroll.js"></script>  <script src="https://redecanais.u1m.com.br/assets/ytplayer/index.js"></script>  <script src="https://redecanais.u1m.com.br/assets/dropdown/js/navbar-dropdown.js"></script>  <script src="https://redecanais.u1m.com.br/assets/playervimeo/vimeo_player.js"></script>  <script src="https://redecanais.u1m.com.br/assets/theme/js/script.js"></script>  
   
   
 </body>
