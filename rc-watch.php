@@ -1,16 +1,17 @@
     <?php
     // Verifica se os parâmetros 'v' (código do vídeo) e 't' (título do vídeo) foram passados via GET
     if (isset($_GET['v']) && isset($_GET['t'])) {
-        $videoId = $_GET['v'];
+        $Id = $_GET['v'];
         $title = $_GET['t'];
     } else {
         // Valores padrão caso os parâmetros não sejam fornecidos (substitua por valores padrão ou manipule conforme necessário)
-        $videoId = 'DVRTDMNT';
+        $Id = 'uUQvoNM-Heo';
         $title = 'RedeCanais';
+		// https://api.themoviedb.org/3/movie/42360?api_key=4e2a96bfb4fcd15bf59dd9c8668db554&language=pt-BR
     }
     ?>
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
   
   <meta charset="UTF-8">
@@ -32,7 +33,8 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
   <link rel="preload" as="style" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXh"><link rel="stylesheet" href="https://redecanais.u1m.com.br/assets/mobirise/css/mbr-additional.css?v=IUdKXhj" type="text/css">
-  <style> .btn-secondary, .btn-secondary:active { background-color: #0000ff !important; border-color: #3F51B5 !important; color: #ffffff !important; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary.active { color: #ffffff !important; background-color: #000000 !important; border-color: #999999 !important; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); } img, iframe { border-radius: 8px; } </style>  
+  <style> .btn-secondary, .btn-secondary:active { background-color: #0000ff !important; border-color: #3F51B5 !important; color: #ffffff !important; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary.active { color: #ffffff !important; background-color: #000000 !important; border-color: #999999 !important; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); } img, iframe { border-radius: 8px; }
+  </style>  
 </head>
 <body>
   
@@ -86,19 +88,23 @@
     <div class="container">
         <div class="mbr-section-head">
             <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong><?php echo $title; ?></strong></h4>
-            <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-7">Temporada: 05 | Ep: 01 - Diretriz Vermelha</h5>
+            <!--<h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-7">Temporada: 05 | Ep: 01 - Diretriz Vermelha</h5>-->
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-12 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" name=Player "" src="https://www.youtube.com/embed/uUQvoNM-Heo?autoplay=1" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
-				
+                <div class="video-wrapper">
+				<div class="embed-responsive">
+<?php
+$videoId = isset($_GET['v']) ? $_GET['v'] : 'uUQvoNM-Heo';
+?>
+				<iframe class="mbr-embedded-video" width="600" height="338" src="https://www.youtube.com/embed/<?php echo htmlspecialchars($videoId); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>				
 				</div>
 				
             </div>
         </div>
     </div>
 </section>
-
 <section data-bs-version="5.1" class="gallery5 mbr-gallery cid-uiUBJVWnUR" id="gallery5-1">
     
 
@@ -116,20 +122,20 @@
             
             <div class="col-12 col-md-6 col-lg-3 item gallery-image active">
                 <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uiV444zO3n-modal" data-bs-target="#uiV444zO3n-modal">
-                    <a href="https://geanramos.com/rc-watch.php?v=STRTRKT05EP01"><img class="w-100" src="https://image.tmdb.org/t/p/original/nezsWLwxiThJdVlRBdJcrSwxcaV.jpg" alt="Star Trek: Discovery | 5 Temporada" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-uiV444zO3n" data-bs-target="#lb-uiV444zO3n"></a>
+                    <a href="https://geanramos.com/rc-watch.php?v=-VXnkJ5P5xg"><img class="w-100" src="https://image.tmdb.org/t/p/original/t749hdxl401Fm74R6vqeOIQs1rZ.jpg" alt="Querida Elizabeth (2020)" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-uiV444zO3n" data-bs-target="#lb-uiV444zO3n"></a>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                     </div>
                 </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-4"><a href="https://geanramos.com/rc-watch.php?v=STRTRKT05EP01" class="text-primary">Star Trek: Discovery | Ep: 01</a></h6>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-4"><a href="https://geanramos.com/rc-watch.php?v=-VXnkJ5P5xg" class="text-primary">Querida Elizabeth (2020)</a></h6>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
                 <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uiV444zO3n-modal" data-bs-target="#uiV444zO3n-modal">
-                    <a href="https://geanramos.com/rc-watch.php?v=STRTRKT05EP02"><img class="w-100" src="https://image.tmdb.org/t/p/original/nezsWLwxiThJdVlRBdJcrSwxcaV.jpg" alt="Star Trek: Discovery | 5 Temporada" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-uiV444zO3n" data-bs-target="#lb-uiV444zO3n"></a>
+                    <a href="https://geanramos.com/rc-watch.php?v=Q5Z6c8oB91A"><img class="w-100" src="https://image.tmdb.org/t/p/original/krSgIB3AD35sKh9iXT5x7Io1xHF.jpg" alt="InuYasha 1: Sentimentos que Transcendem o Tempo (2001)" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-uiV444zO3n" data-bs-target="#lb-uiV444zO3n"></a>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                     </div>
                 </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-4"><a href="https://geanramos.com/rc-watch.php?v=STRTRKT05EP02" class="text-primary">Star Trek: Discovery | Ep: 02</a></h6>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-4"><a href="https://geanramos.com/rc-watch.php?v=Q5Z6c8oB91A" class="text-primary">InuYasha 1: Sentimentos que Transcendem o Tempo (2001)</a></h6>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
                 <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uiV444zO3n-modal" data-bs-target="#uiV444zO3n-modal">
                     <a href="https://geanramos.com/rc-watch.php?v=STRTRKT05EP03"><img class="w-100" src="https://image.tmdb.org/t/p/original/nezsWLwxiThJdVlRBdJcrSwxcaV.jpg" alt="Star Trek: Discovery | 5 Temporada" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-uiV444zO3n" data-bs-target="#lb-uiV444zO3n"></a>
